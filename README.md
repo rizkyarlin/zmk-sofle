@@ -1,7 +1,7 @@
 
 ZMK Sofle untuk Super Mini / Promicro Wireless NRF52840.
 [ZMK STUDIO](https://zmk.studio/)
-Ada update baru ZMK Studio remapping tanpa perlu di flash 
+Ada update baru ZMK Studio remapping tanpa perlu di flash
 
 [Full Dokumentasi ZMK](https://zmk.dev/docs)
 
@@ -14,13 +14,13 @@ Video fork repository :
 
 Prosedur Reset Keyboard Split
 Lakukan langkah-langkah berikut untuk mereset semua bagian keyboard split Anda:
-- Masukkan setiap bagian keyboard split ke mode bootloader. Dengan cara tekan 2x tombol reset saat USB terhubung akan muncul drive baru, untuk flash nya cukup drag & drop di disk bootloader
+- Masukkan setiap bagian keyboard split ke mode bootloader. Dengan cara tekan 2x tombol reset saat USB terhubung akan muncul drive baru, untuk flash nya cukup drag & drop di disk bootloader. (Windows or Linux). Untuk mac lakukan: `cp -X firmware/sofle_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO`
 - Flash salah satu bagian keyboard dengan firmware reset pengaturan setting_reset.uf2.
 - Ulangi langkah 2 pada bagian lainnya dari keyboard split.
 - Flash image firmware yang sebenarnya untuk setiap bagian keyboard split (misalnya my_board_left.uf2 untuk bagian kiri, my_board_right.uf2 untuk bagian kanan).
 - Jika central dan peripheral tidak saling terhubung setelah menyelesaikan langkah-langkah ini, akan membantu untuk mereset central dan peripheral pada waktu yang hampir bersamaan. Biasanya dilakukan dengan menghubungkan pin reset ke ground pada setiap mikrokontroler keyboard Anda, menekan tombol reset, atau mematikan lalu menyalakan keduanya dengan sakelar daya.
 - Setelah selesai, Anda harus menghapus/lupakan keyboard dari perangkat host mana pun yang sebelumnya terpasang, lalu lakukan pairing ulang, karena informasi pairing tersebut juga telah dihapus dari keyboard.
-  
+
 
 🔵 Penjelasan Bluetooth ZMK (Versi Sederhana)
 Keyboard ZMK menggunakan sistem Bluetooth yang aktif secara otomatis. Pada layar keyboard, Anda akan melihat angka dan simbol yang menjelaskan status koneksi.
@@ -54,7 +54,7 @@ Jika slot tersebut sudah pernah terhubung ke perangkat lain, Anda harus:
 Pindah ke slot lain (BT_SEL berikutnya), atau
 Hapus slot dengan tombol BT_CLR
 
-📌 5. Contoh Penggunaan Slot <br> 
+📌 5. Contoh Penggunaan Slot <br>
 Rekomendasi pembagian slot: <br>
 BT_SEL 0 → PC <br>
 BT_SEL 1 → Tablet <br>
