@@ -40,6 +40,16 @@
         tap-ms = <100>;
     };
 
+    hmr_behavior: hmr_behavior {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HMR_BEHAVIOR";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
@@ -115,11 +125,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans      &trans             &trans       &trans       &trans                    &trans     &trans    &trans    &trans     &trans  &trans
-&trans  &kp INS     &kp PSCRN          &kp K_CMENU  &trans       &trans                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &trans      &kp LS(LG(SPACE))  &trans       &trans       &trans                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &kp K_UNDO  &kp K_CUT          &kp K_COPY   &kp K_PASTE  &trans  &trans    &trans  &mkp MB4   &mkp MB5  &trans    &trans     &trans  &trans
-                    &trans             &trans       &trans       &trans  &trans    &trans  &trans     &trans    &trans    &trans
+&trans  &trans      &trans             &trans       &trans       &trans                           &trans     &trans    &trans    &trans     &trans  &trans
+&trans  &kp INS     &kp PSCRN          &kp K_CMENU  &trans       &kp LS(LG(T))                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &trans      &kp LS(LG(SPACE))  &trans       &trans       &trans                           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &kp K_UNDO  &kp K_CUT          &kp K_COPY   &kp K_PASTE  &kp LS(LG(B))  &trans    &trans  &mkp MB4   &mkp MB5  &trans    &trans     &trans  &trans
+                    &trans             &trans       &trans       &trans         &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
