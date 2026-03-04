@@ -83,6 +83,12 @@
             key-positions = <28 27>;
             layers = <1>;
         };
+
+        backspace_word {
+            bindings = <&kp RG(BACKSPACE)>;
+            key-positions = <34 33>;
+            layers = <0>;
+        };
     };
 
     behaviors {
