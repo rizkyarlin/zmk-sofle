@@ -74,11 +74,13 @@
         php_arrow_combo {
             bindings = <&php_arrow_macro>;
             key-positions = <31 32>;
+            layers = <1>;
         };
 
         php_fat_arrow_combo {
             bindings = <&php_fat_arrow_macro>;
             key-positions = <28 27>;
+            layers = <1>;
         };
     };
 
