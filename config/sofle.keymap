@@ -68,6 +68,7 @@
         raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <28 27>;
+            layers = <0>;
         };
 
         php_arrow_combo {
