@@ -170,7 +170,7 @@
                     &trans             &trans       &trans       &trans         &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp MW_UP MW_DN &inc_dec_kp MW_L MW_R>;
+            sensor-bindings = <&inc_dec_kp MW_UP MW_DN, &inc_dec_kp MW_L MW_R>;
             label = "nav";
         };
 
