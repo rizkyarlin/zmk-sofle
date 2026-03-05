@@ -85,7 +85,7 @@
         };
 
         backspace_word {
-            bindings = <&kp RG(BACKSPACE)>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <34 33>;
             layers = <0>;
         };
