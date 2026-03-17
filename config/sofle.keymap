@@ -47,9 +47,8 @@
 
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-
-        // require-prior-idle-ms = <125>;
+        tapping-term-ms = <220>;
+        require-prior-idle-ms = <125>;
     };
 
     // Activate ADJUST layer by pressing raise and lower
