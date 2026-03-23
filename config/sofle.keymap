@@ -165,7 +165,7 @@
                 <&inc_dec_kp PG_DN PG_UP>;
         };
 
-        raise_layer {
+        nav_layer {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
             // |       | INS | PSCR| GUI  |      |      |                   | PGUP |  HOME |   UP  | END  |       |       |
@@ -174,11 +174,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans  &trans             &trans         &trans  &trans                           &trans     &trans    &trans          &trans           &trans  &trans
-&trans  &trans  &trans             &kp K_CMENU    &trans  &kp LC(LG(T))                    &kp PG_UP  &kp HOME  &kp UP          &kp END          &trans  &trans
-&trans  &trans  &kp LS(LG(SPACE))  &trans         &trans  &trans                           &kp PG_DN  &kp LEFT  &kp DOWN        &kp RIGHT        &trans  &trans
-&trans  &trans  &trans             &kp LS(LG(L))  &trans  &kp LS(LG(B))  &trans    &trans  &mkp MB4   &mkp MB5  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans
-                &trans             &trans         &trans  &trans         &trans    &trans  &trans     &trans    &trans          &trans
+&trans  &trans  &trans             &trans             &trans  &trans                           &trans     &trans    &trans          &trans           &trans  &trans
+&trans  &trans  &trans             &kp LC(LG(SPACE))  &trans  &kp LC(LG(T))                    &kp PG_UP  &kp HOME  &kp UP          &kp END          &trans  &trans
+&trans  &trans  &kp LS(LG(SPACE))  &trans             &trans  &trans                           &kp PG_DN  &kp LEFT  &kp DOWN        &kp RIGHT        &trans  &trans
+&trans  &trans  &trans             &kp LS(LG(L))      &trans  &kp LS(LG(B))  &trans    &trans  &mkp MB4   &mkp MB5  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans
+                &trans             &trans             &trans  &trans         &trans    &trans  &trans     &trans    &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
