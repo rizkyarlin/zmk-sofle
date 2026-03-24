@@ -23,7 +23,7 @@ include:
   # snippet: studio-rpc-usb-uart
   # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano_v2
-    shield: sofle_left
+    shield: sofle_left raw_hid_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   #  cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
@@ -39,9 +39,3 @@ include:
   #  shield: sofle_right nice_view_adapter nice_view
   # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   #  - board: nice_nano_v2
-  - board: nice_nano_v2
-    shield: sofle_left raw_hid_adapter # <-- required for Raw HID support
-    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
-  - board: nice_nano_v2
-    shield: sofle_left raw_hid_adapter # <-- required for Raw HID support
-    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
