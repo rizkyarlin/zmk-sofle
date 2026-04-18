@@ -85,8 +85,13 @@
 
         backspace_word {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
             layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BSPC>;
+            key-positions = <31 32>;
         };
     };
 
@@ -137,7 +142,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&scroll_encoder>;
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
 
             label = "default";
         };
